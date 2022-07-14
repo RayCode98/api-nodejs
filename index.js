@@ -85,6 +85,8 @@ server.use((req, res) => {
   })
 })
 
-server.listen(3000, () => {
-  console.log('Servidor corriendo en el puerto 3000')
+const port = proccess.env.PORT || 3001
+
+server.listen(port, () => {
+  console.log('Corriendo')
 })
